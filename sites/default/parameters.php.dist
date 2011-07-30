@@ -1,0 +1,35 @@
+<?php
+define("DRUPAL_HASH_SALT",   "hash");
+
+/**
+ * prod definitions
+ */
+define("PROD_DB_USER", "user");
+define("PROD_DB_PASS", "pass");
+define("PROD_DB_HOST", "host");
+define("PROD_DB_NAME", "db");
+
+/**
+ * stage definitions
+ */
+define("STAGE_DB_USER", PROD_DB_USER);
+define("STAGE_DB_PASS", PROD_DB_PASS);
+define("STAGE_DB_HOST", PROD_DB_HOST);
+define("STAGE_DB_NAME", "db_stage");
+
+/**
+ * test definitions
+ */
+define("TEST_DB_USER", PROD_DB_USER);
+define("TEST_DB_PASS", PROD_DB_PASS);
+define("TEST_DB_HOST", PROD_DB_HOST);
+define("TEST_DB_NAME", "db_test");
+
+/**
+ * dev definitions
+ */
+define("DEV_DB_USER", PROD_DB_USER);
+define("DEV_DB_PASS", PROD_DB_PASS);
+define("DEV_DB_HOST", PROD_DB_HOST);
+define("DEV_DB_NAME", "db_dev");
+
